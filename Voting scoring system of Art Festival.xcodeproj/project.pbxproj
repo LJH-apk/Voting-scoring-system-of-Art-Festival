@@ -285,8 +285,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1.210201_alpha;
-				PRODUCT_BUNDLE_IDENTIFIER = "liujiahang.Voting-scoring-system-of-Art-Festival";
+				MARKETING_VERSION = 0.1.4.210201_alpha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qq.18701059325.art;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -308,8 +308,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1.210201_alpha;
-				PRODUCT_BUNDLE_IDENTIFIER = "liujiahang.Voting-scoring-system-of-Art-Festival";
+				MARKETING_VERSION = 0.1.4.210201_alpha;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qq.18701059325.art;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

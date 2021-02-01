@@ -1,6 +1,6 @@
 //
 //  Second.swift
-//  Art Day
+//  Voting scoring system of Art Festival
 //
 //  Created by 刘佳航 on 2021/2/1.
 //
