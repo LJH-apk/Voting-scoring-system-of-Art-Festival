@@ -11,6 +11,8 @@
 		80D6452025C7EF93002E9FAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6451F25C7EF93002E9FAF /* ContentView.swift */; };
 		80D6452225C7EF94002E9FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D6452125C7EF94002E9FAF /* Assets.xcassets */; };
 		80D6452525C7EF94002E9FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D6452425C7EF94002E9FAF /* Preview Assets.xcassets */; };
+		80D6452F25C7F14A002E9FAF /* Second.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6452E25C7F14A002E9FAF /* Second.swift */; };
+		80D6453225C7F160002E9FAF /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6453125C7F160002E9FAF /* About.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		80D6452125C7EF94002E9FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80D6452425C7EF94002E9FAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		80D6452625C7EF94002E9FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80D6452E25C7F14A002E9FAF /* Second.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Second.swift; sourceTree = "<group>"; };
+		80D6453125C7F160002E9FAF /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				80D6451D25C7EF93002E9FAF /* Voting_scoring_system_of_Art_FestivalApp.swift */,
+				80D6453125C7F160002E9FAF /* About.swift */,
+				80D6452E25C7F14A002E9FAF /* Second.swift */,
 				80D6451F25C7EF93002E9FAF /* ContentView.swift */,
 				80D6452125C7EF94002E9FAF /* Assets.xcassets */,
 				80D6452625C7EF94002E9FAF /* Info.plist */,
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				80D6452025C7EF93002E9FAF /* ContentView.swift in Sources */,
+				80D6453225C7F160002E9FAF /* About.swift in Sources */,
 				80D6451E25C7EF93002E9FAF /* Voting_scoring_system_of_Art_FestivalApp.swift in Sources */,
+				80D6452F25C7F14A002E9FAF /* Second.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,10 +285,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1.210201_alpha;
 				PRODUCT_BUNDLE_IDENTIFIER = "liujiahang.Voting-scoring-system-of-Art-Festival";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,10 +308,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1.210201_alpha;
 				PRODUCT_BUNDLE_IDENTIFIER = "liujiahang.Voting-scoring-system-of-Art-Festival";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
