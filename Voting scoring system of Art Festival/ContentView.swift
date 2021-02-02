@@ -12,46 +12,43 @@ struct ContentView: View {
     var body: some View {
         
         HStack(alignment: .center) {
-            ZStack(alignment:.bottom) {//将版本号放置于主屏幕上方
-                ZStack(alignment:.top) {
-                    ZStack(alignment:.leading) {//将列表按钮放置在主屏幕之上
-                        NavigationView {
-                            VStack {
-                                Text("艺术节评分系统")
-                                    .bold()
+            ZStack(alignment:.top) {
+                ZStack(alignment:.leading) {//将列表按钮放置在主屏幕之上
+                    NavigationView {
+                        VStack {
+                            Text("艺术节投票系统")
+                                .bold()
+                                .font(.largeTitle)
+                                .foregroundColor(.secondary)
+                                .background(Color.white)
+                                .frame(width: 270, height: 120)
+                            
+                            NavigationLink(destination: Second()) {
+                                Text("进入投票")
                                     .font(.largeTitle)
-                                    .foregroundColor(.secondary)
+                                    .foregroundColor(.black)
                                     .background(Color.white)
-                                    .frame(width: 270, height: 120)
+                                    .frame(width: 170, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .shadow(color:.secondary, radius: 10, x: 5, y: 10)
+                                    .cornerRadius(30)
                                 
-                                NavigationLink(destination: Second()) {
-                                    Text("进行评分")
-                                        .font(.largeTitle)
-                                        .foregroundColor(.black)
-                                        .background(Color.white)
-                                        .frame(width: 170, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                        .shadow(color:.secondary, radius: 10, x: 5, y: 10)
-                                        .cornerRadius(30)
-
-                                }
-
-                            .navigationBarTitle(Text(""), displayMode: .inline)
                             }
                             
+                            .navigationBarTitle(Text(""), displayMode: .inline)
                         }
                         
-                        MenuButton(show: $show)
-                        
-                        MenuView(show: $show)
-                    
                     }
                     
                     
+                    MenuButton(show: $show)
+                    
+                    MenuView(show: $show)
+                    
                 }
                 
-                Text("版本：0.1.4.210201_alpha（内部版本）")
-                    .padding()
+                
             }
+            
         }
     }
 }
@@ -65,34 +62,32 @@ struct ContentView_Previews: PreviewProvider {
 
 struct MenuRow : View{
     var image = "creditcard"
-    var text = "My Account"
+    var name = "My Account"
+    var text = ""
     var body: some View{
         return HStack {
             
-//            Button(action: {
-//                NavigationLink(destination:Second(),label:{
-//                    Text(text)
-//                        .foregroundColor(.black)
-//                        .font(.body)
-//                })
-//            }) {
-//
-//
-//            }
-                VStack{
-                        HStack {
-                            Image(systemName: image)
-                                .imageScale(.large)
+            VStack{
+                HStack {
+                    Image(systemName: image)
+                        .imageScale(.large)
+                        .foregroundColor(.secondary)
+                        .frame(width: 40, height: 40)
+                    
+                    VStack(alignment: .leading) {
+                        Text(name)
+                            .foregroundColor(.black)
+                            .font(.title3)
+                            .bold()
+                        Section {
+                            Text(text)
                                 .foregroundColor(.secondary)
-                                .frame(width: 32, height: 32)
-                            NavigationLink(
-                                destination: Second(),
-                                label: {
-                                    Text(text)
-                                        .foregroundColor(.black)
-                                        .font(.body)
-                            })
+                                .font(.headline)
+                        }
                     }
+                    
+                    
+                }
             }
             Spacer()
         }
@@ -103,13 +98,14 @@ struct Menu : Identifiable {
     var id = UUID()
     var name : String
     var icon : String
+    var text : String
 }
 
 let MenuData = [
-    Menu(name: "My Account", icon: "person.crop.square"),
-    Menu(name: "Team", icon: "person.2"),
-    Menu(name: "About", icon: "exclamationmark.circle"),
-    Menu(name: "Help", icon: "lightbulb")
+    Menu(name: "开发团队", icon: "person.2" , text:"作者：刘佳航，袁仲泽"),
+    Menu(name: "关于", icon: "exclamationmark.circle",text:"Power by Apple.Inc"),
+    Menu(name: "帮助", icon: "lightbulb",text:"请参考使用说明"),
+    Menu(name: "版本", icon: "hammer",text:"0.1.4.210201_alpha")
 ]
 
 
@@ -120,7 +116,7 @@ struct MenuView: View {
     var body: some View {
         VStack(alignment:.leading , spacing:20) {
             ForEach(menu){ item in
-                MenuRow(image: item.icon , text: item.name)
+                MenuRow(image: item.icon, name: item.name, text: item.text)
             }
             
             
@@ -168,5 +164,7 @@ struct MenuButton: View {
             
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topTrailing)
+        .padding(.top,55)
+        .padding(.trailing,10)
     }
 }
