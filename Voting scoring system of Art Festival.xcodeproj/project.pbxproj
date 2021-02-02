@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		808DDA6225C9407200F09196 /* AccountIoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DDA6125C9407200F09196 /* AccountIoginView.swift */; };
 		80D6451E25C7EF93002E9FAF /* Voting_scoring_system_of_Art_FestivalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6451D25C7EF93002E9FAF /* Voting_scoring_system_of_Art_FestivalApp.swift */; };
 		80D6452025C7EF93002E9FAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6451F25C7EF93002E9FAF /* ContentView.swift */; };
 		80D6452225C7EF94002E9FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D6452125C7EF94002E9FAF /* Assets.xcassets */; };
 		80D6452525C7EF94002E9FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D6452425C7EF94002E9FAF /* Preview Assets.xcassets */; };
-		80D6452F25C7F14A002E9FAF /* Second.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6452E25C7F14A002E9FAF /* Second.swift */; };
-		80D6453225C7F160002E9FAF /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6453125C7F160002E9FAF /* About.swift */; };
+		80D6452F25C7F14A002E9FAF /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6452E25C7F14A002E9FAF /* SecondView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		808DDA6125C9407200F09196 /* AccountIoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountIoginView.swift; sourceTree = "<group>"; };
 		80D6451A25C7EF93002E9FAF /* Voting scoring system of Art Festival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voting scoring system of Art Festival.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D6451D25C7EF93002E9FAF /* Voting_scoring_system_of_Art_FestivalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voting_scoring_system_of_Art_FestivalApp.swift; sourceTree = "<group>"; };
 		80D6451F25C7EF93002E9FAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		80D6452125C7EF94002E9FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80D6452425C7EF94002E9FAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		80D6452625C7EF94002E9FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80D6452E25C7F14A002E9FAF /* Second.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Second.swift; sourceTree = "<group>"; };
-		80D6453125C7F160002E9FAF /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		80D6452E25C7F14A002E9FAF /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				80D6451D25C7EF93002E9FAF /* Voting_scoring_system_of_Art_FestivalApp.swift */,
-				80D6453125C7F160002E9FAF /* About.swift */,
-				80D6452E25C7F14A002E9FAF /* Second.swift */,
+				80D6452E25C7F14A002E9FAF /* SecondView.swift */,
 				80D6451F25C7EF93002E9FAF /* ContentView.swift */,
+				808DDA6125C9407200F09196 /* AccountIoginView.swift */,
 				80D6452125C7EF94002E9FAF /* Assets.xcassets */,
 				80D6452625C7EF94002E9FAF /* Info.plist */,
 				80D6452325C7EF94002E9FAF /* Preview Content */,
@@ -145,9 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				80D6452025C7EF93002E9FAF /* ContentView.swift in Sources */,
-				80D6453225C7F160002E9FAF /* About.swift in Sources */,
+				808DDA6225C9407200F09196 /* AccountIoginView.swift in Sources */,
 				80D6451E25C7EF93002E9FAF /* Voting_scoring_system_of_Art_FestivalApp.swift in Sources */,
-				80D6452F25C7F14A002E9FAF /* Second.swift in Sources */,
+				80D6452F25C7F14A002E9FAF /* SecondView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -260,7 +260,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
