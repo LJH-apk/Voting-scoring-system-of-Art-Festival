@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct AccountIoginView: View {
+    @State var Password = ""
+    @State var Username = ""
+    @State private var textOfPassword = ""
+    @State private var textOfUsername = ""
+    @State private var jokes: [Joke] = []
     @State var choose = 0
     @State var showFlag = false
-    @State var password:String = ""
-    @State var username:String = ""
     @State var tempPassword : String = ""
     @State var tempUsername : String = ""
     @Environment(\.presentationMode) var presentationMode
@@ -43,9 +46,9 @@ struct AccountIoginView: View {
                 
                 
                 Button(action: {
-                    withAnimation{
-                        self.showFlag.toggle()
-                    }
+                    self.Username = tempUsername
+                    self.Password = tempPassword
+                    text_of_view(uers: self.Username, pass: self.Password)
                 }) {
                     HStack {
                         Image(systemName: "arrow.up.circle")
@@ -55,6 +58,12 @@ struct AccountIoginView: View {
                             .font(.title)
                             .foregroundColor(.secondary)
                             .frame(width:70,height: 40 ,alignment: .center)
+                        Text(textOfUsername)
+                            .font(.title2)
+                            .foregroundColor(.black)
+                        Text(textOfPassword)
+                            .font(.title2)
+                            .foregroundColor(.black)
                         
                     }
                     
@@ -75,8 +84,36 @@ struct AccountIoginView: View {
             
             
         }
+    
+    
     }
+    
+    func getJoke(requestUrlData : String,API_url : String,API_value :String) {
+        
+        let url = URL(string: "http://127.0.0.1:8080/\(API_url)?\(API_value)=\(requestUrlData)")!
+        var urlRequest = URLRequest(url:url)
+        urlRequest.addValue("", forHTTPHeaderField: "Get")
+        URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+            if let data = data,
+                let httpResponse = response as? HTTPURLResponse, (200..<300) ~= httpResponse.statusCode,
+                let strData = String(bytes: data, encoding: .utf8)
+            {
+                textOfUsername = strData
+                print(strData)
+                //print(strData)
+                self.jokes.insert(Joke(joke: strData, status: 20), at: 0)
+            } }.resume()
+        
+    }
+    
+    func text_of_view(uers : String, pass: String){
+        let username_password = "\(uers)and\(pass)"
+        getJoke(requestUrlData: username_password, API_url: "setUsername", API_value: "setUserName")
+    }
+
 }
+
+
 
 #if DEBUG
 struct AccountIogin_Previews: PreviewProvider {
@@ -90,4 +127,5 @@ struct AccountIogin_Previews: PreviewProvider {
 #endif
 
     //var chooseImage:Int = 0;
-    
+
+

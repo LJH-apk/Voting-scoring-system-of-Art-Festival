@@ -38,9 +38,18 @@ struct ContentView: View {
                         .font(.title)
                         .cornerRadius(30)
                         
+//                        Text("Time: \(timeRemaining)")
+//                            .background(
+//                                Capsule()
+//                                    .fill(Color.white)
+//                                    .opacity(0.75)
+//                            )
+                        
                         
                     }
                     .padding(.top,60)
+                    
+                    
                     
                     VStack(alignment: .trailing) {
                         MenuButton(show: $show)
@@ -64,6 +73,11 @@ struct ContentView: View {
             }
             
         }
+//        .onReceive(timer){ time in
+//            if self.timeRemaining > 0{
+//                self.timeRemaining -= 1
+//            }
+//        }
     }
 }
 #if DEBUG
@@ -117,9 +131,10 @@ struct Menu : Identifiable {
 
 let MenuData = [
     Menu(name: "开发团队", icon: "person.2" , text:"作者：刘佳航，袁仲泽"),
-    Menu(name: "关于", icon: "exclamationmark.circle",text:"Power by Apple.Inc"),
+    Menu(name: "艺术指导", icon: "highlighter", text: "待定"),
+    Menu(name: "关于", icon: "exclamationmark.circle",text:"Power by Apple Inc."),
     Menu(name: "帮助", icon: "lightbulb",text:"请参考使用说明"),
-    Menu(name: "版本", icon: "hammer",text:"0.2.4.210203_alpha（内部版本）")
+    Menu(name: "版本", icon: "hammer",text:"0.2.5.210204_alpha（内部版本）")
 ]
 
 //侧边栏视图设置
@@ -181,9 +196,9 @@ struct MenuView: View {
         .cornerRadius(30.0)
         .padding(.trailing, 40)
         .shadow(radius: 20)
-        .rotation3DEffect(Angle(degrees:show ? 0 : 90), axis: (x:-5, y: 20.0, z: -10))
+        .rotation3DEffect(Angle(degrees:show ? 0 : 60), axis: (x:0, y: 20.0, z: 0))
         .onTapGesture {
-            withAnimation(.linear(duration:0.35)){
+            withAnimation(.linear(duration:0.2)){
                 self.show.toggle()
             }
         }
@@ -218,7 +233,7 @@ struct MenuButton: View {
         .padding(.trailing,10)
     }
 }
-//登陆按钮
+//用户状态显示
 struct SigninButton: View {
     @State private var isPage = false
     @Binding var show : Bool
