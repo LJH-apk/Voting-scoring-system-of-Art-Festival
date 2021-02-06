@@ -15,7 +15,7 @@ struct Joke: Codable,Identifiable{
 }
 
 struct SecondView: View {
-    @State var player_data = ""
+    @State var player_data : String = ""
     //@State var send_data : String = ""
     @State var textOfData = ""
     var link = "链接"
@@ -46,17 +46,20 @@ struct SecondView: View {
                     .bold()
                     .padding(.bottom,-20)
                 PlayerCard()
+                
                 Text("分数：")
                     .font(.title)
                     .bold()
+                //实时显示用户输入的分数
                 Text(player_data)
-                    .font(.callout)
+                    .font(.title2)
                 KeyBored(player_data: $player_data)
                 Text("注意：分数不得大于10分，否则视为无效分数")
-                    .font(.caption2)
+                    .font(.caption)
                     .foregroundColor(.black)
                     .padding()
                 Button(action: {
+                    getJoke(request: player_data)
                     //                    self.send_data = Fraction
                     //                    self.getJoke(requestUrlData: send_data)
                     
@@ -98,10 +101,9 @@ struct SecondView: View {
     }
     
     
-    func getJoke(requestUrlData : String) {
-        
-        
-        let url = URL(string: "http://127.0.0.1:8080/setFractionPlayerOne?setFractionPlayerOne=\(requestUrlData)")!
+    func getJoke(request : String) {
+
+        let url = URL(string: "http://127.0.0.1:8080/acceptData?data=\(request)")!
         var urlRequest = URLRequest(url:url)
         urlRequest.addValue("", forHTTPHeaderField: "Get")
         URLSession.shared.dataTask(with: urlRequest) { data, response, error in
@@ -111,22 +113,19 @@ struct SecondView: View {
             {
                 ReturnTextOfSever(text: strData)
                 print(strData)
-                //print(strData)
                 self.jokes.insert(Joke(joke: strData, status: 20), at: 0)
             } }.resume()
-        
+
     }
     //判断服务器返回的数据
+    
+    
     func toBool(text:String) -> String? {
         switch text {
-        case "提交成功":
+        case "OK":
             return "提交成功"
-        case "数值过大":
+        case "太大":
             return "数值过大"
-        case "不是数字":
-            return "不是数字"
-        case "分数必须为正数":
-            return "分数必须为正数"
         default:
             return nil
         }
@@ -139,16 +138,8 @@ struct SecondView: View {
         }
         else {
             responseData = "提交失败!"
-            switch toBool(text: text) {
-            case "数值过大":
-                textOfData = "原因：\(text)"
-            case "不是数字":
-                textOfData = "原因：\(text)"
-            case "分数必须为正数":
-                textOfData = "原因：\(text)"
-            default:
-                textOfData = ""
-            }
+            textOfData = "原因：数值过大"
+            
         }
     }
     
@@ -218,6 +209,8 @@ struct KeyBored: View {
                 .padding(.all,8)
                 .foregroundColor(.black)
                 .frame(width:40,height: 40)
+                .background(Color.white)
+                .cornerRadius(30)
                 
                 Button(action: {
                     self.player_data = "\(player_data)\(2)"
@@ -227,6 +220,11 @@ struct KeyBored: View {
                 .padding(.all,8)
                 .foregroundColor(.black)
                 .frame(width:40,height: 40)
+                .background(Color.white)
+                .cornerRadius(30)
+                //.shadow(color:.secondary, radius: 20, x: 0, y: 20)
+                
+                
                 Button(action: {
                     self.player_data = "\(player_data)\(3)"
                 }) {
@@ -235,6 +233,10 @@ struct KeyBored: View {
                 .padding(.all,8)
                 .foregroundColor(.black)
                 .frame(width:40,height: 40)
+                .background(Color.white)
+                .cornerRadius(30)
+                //.shadow(color:.secondary, radius: 20, x: 0, y: 20)
+                
             }
             HStack {
                 Button(action: {
@@ -245,6 +247,10 @@ struct KeyBored: View {
                 .padding(.all,8)
                 .foregroundColor(.black)
                 .frame(width:40,height: 40)
+                .background(Color.white)
+                .cornerRadius(30)
+                //.shadow(color:.secondary, radius: 20, x: 0, y: 20)
+                
                 Button(action: {
                     self.player_data = "\(player_data)\(5)"
                 }) {
@@ -253,6 +259,10 @@ struct KeyBored: View {
                 .padding(.all,8)
                 .foregroundColor(.black)
                 .frame(width:40,height: 40)
+                .background(Color.white)
+                .cornerRadius(30)
+                //.shadow(color:.secondary, radius: 20, x: 0, y: 20)
+                
                 Button(action: {
                     self.player_data = "\(player_data)\(6)"
                 }) {
@@ -261,6 +271,10 @@ struct KeyBored: View {
                 .padding(.all,8)
                 .foregroundColor(.black)
                 .frame(width:40,height: 40)
+                .background(Color.white)
+                .cornerRadius(30)
+                //.shadow(color:.secondary, radius: 20, x: 0, y: 20)
+                
             }
             HStack {
                 Button(action: {
@@ -271,6 +285,10 @@ struct KeyBored: View {
                 .padding(.all,8)
                 .foregroundColor(.black)
                 .frame(width:40,height: 40)
+                .background(Color.white)
+                .cornerRadius(30)
+                //.shadow(color:.secondary, radius: 20, x: 0, y: 20)
+                
                 Button(action: {
                     self.player_data = "\(player_data)\(8)"
                 }) {
@@ -279,6 +297,10 @@ struct KeyBored: View {
                 .padding(.all,8)
                 .foregroundColor(.black)
                 .frame(width:40,height: 40)
+                .background(Color.white)
+                .cornerRadius(30)
+                //.shadow(color:.secondary, radius: 20, x: 0, y: 20)
+                
                 Button(action: {
                     self.player_data = "\(player_data)\(9)"
                 }) {
@@ -287,8 +309,23 @@ struct KeyBored: View {
                 .padding(.all,8)
                 .foregroundColor(.black)
                 .frame(width:40,height: 40)
+                .background(Color.white)
+                .cornerRadius(30)
+                //.shadow(color:.secondary, radius: 20, x: 0, y: 20)
             }
             HStack{
+                Button(action: {
+                    self.player_data = "\(player_data)\(".")"
+                }){
+                    Text(".")
+                }
+                .padding(.all,8)
+                .foregroundColor(.black)
+                .frame(width:40,height: 40)
+                .background(Color.white)
+                //.shadow(color:.secondary, radius: 20, x: 0, y: 20)
+                .cornerRadius(30)
+                
                 Button(action: {
                     self.player_data = "\(player_data)\(0)"
                 }) {
@@ -297,6 +334,24 @@ struct KeyBored: View {
                 .padding(.all,8)
                 .foregroundColor(.black)
                 .frame(width:40,height: 40)
+                .background(Color.white)
+                .cornerRadius(30)
+                //.shadow(color:.secondary, radius: 20, x: 0, y: 20)
+                
+                Button(action: {
+                    self.player_data = player_data.substring(to: player_data.index(before: player_data.endIndex))
+                }) {
+                    Image(systemName: "delete.left")
+                        
+                        
+                    
+                }
+                .padding(.all,8)
+                .foregroundColor(.black)
+                .frame(width:40,height: 40 ,alignment: .center)
+                .background(Color.white)
+                .cornerRadius(30)
+                //.shadow(color:.secondary, radius: 20, x: 0, y: 20)
             }
             
             

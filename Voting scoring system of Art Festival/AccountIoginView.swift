@@ -92,7 +92,7 @@ struct AccountIoginView: View {
         
         let url = URL(string: "http://127.0.0.1:8080/\(API_url)?\(API_value)=\(requestUrlData)")!
         var urlRequest = URLRequest(url:url)
-        urlRequest.addValue("", forHTTPHeaderField: "Get")
+        urlRequest.addValue("", forHTTPHeaderField: "Appect")
         URLSession.shared.dataTask(with: urlRequest) { data, response, error in
             if let data = data,
                 let httpResponse = response as? HTTPURLResponse, (200..<300) ~= httpResponse.statusCode,
@@ -108,7 +108,7 @@ struct AccountIoginView: View {
     
     func text_of_view(uers : String, pass: String){
         let username_password = "\(uers)and\(pass)"
-        getJoke(requestUrlData: username_password, API_url: "setUsername", API_value: "setUserName")
+        getJoke(requestUrlData: username_password, API_url: "setUsername", API_value: "setuserName")
     }
 
 }
