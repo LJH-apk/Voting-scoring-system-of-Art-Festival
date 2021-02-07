@@ -1,1 +1,12 @@
-# Voting-scoring-system-of-Art-Festival
+# ArtIOS
+#简介：
+简易IOS投票客户端
+
+#软件架构
+单体架构
+
+#安装教程
+通过Safari浏览器下载ipa文件安装
+
+#使用说明
+有手就行
