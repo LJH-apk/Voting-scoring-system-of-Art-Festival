@@ -8,77 +8,79 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var AccounterName:String = "未登录"
+    var classes = Classes()
+    //@State var AccounterName:String = "未登录"
     @State var show = false
     @State private var isPresented = false
+    
     var body: some View {
-        
         HStack(alignment: .center) {
             ZStack(alignment:.top) {
                 ZStack(alignment:.top) {//控制屏幕中“进入打分”按钮的横坐标
                     VStack(alignment: .center) {
+                        Image("1-1")
+                            .resizable()
+                            .frame(width:270,height: 135)
+                            .padding(.top , 30)
+                            //.padding(.bottom , 40)
                         Text("艺术节打分系统")
                             .bold()
                             .font(.largeTitle)
                             .foregroundColor(.secondary)
                             .background(Color.white)
                             .frame(width: 270, height: 120)
-                        
-                        
-                        
-                        
-                        Button("进入打分") {
-                            self.isPresented = true
-                        }.sheet(isPresented: $isPresented, content: {
-                            SecondView()
-                        })
-                        .background(Color.blue)
-                        .foregroundColor(.black)
-                        .frame(width:120, height: 40)
-                        .font(.title)
-                        .cornerRadius(30)
-                        
-//                        Text("Time: \(timeRemaining)")
-//                            .background(
-//                                Capsule()
-//                                    .fill(Color.white)
-//                                    .opacity(0.75)
-//                            )
-                        
-                        
+
+
+                            Button("进入打分") {
+                                self.isPresented = true
+                            }.sheet(isPresented: $isPresented){
+                                GetView()
+                            }
+
+                            .background(Color.secondary)
+                            .foregroundColor(.white)
+                            .frame(width:120, height: 40)
+                            .font(.title)
+                            .cornerRadius(30)
+
+
+
+
+                        //                        Text("Time: \(timeRemaining)")
+                        //                            .background(
+                        //                                Capsule()
+                        //                                    .fill(Color.white)
+                        //                                    .opacity(0.75)
+                        //                            )
+
+
                     }
                     .padding(.top,60)
-                    
-                    
-                    
+
                     VStack(alignment: .trailing) {
                         MenuButton(show: $show)
                             .frame(width: 60, height: 60)
                             .padding(.top, 5)
                         SigninButton(show: $show)
-                        
-                        
-                        
                     }
-                    
-                    
-                    
-                    MenuView(AccounterName: $AccounterName, show: $show)
-                    
-                    
-                    
+                    MenuView(show: $show)
+                        .environmentObject(classes)
                 }
-                
-                
+
+
             }
-            
+
         }
-//        .onReceive(timer){ time in
-//            if self.timeRemaining > 0{
-//                self.timeRemaining -= 1
-//            }
-//        }
+        
+        
+        //        .onReceive(timer){ time in
+        //            if self.timeRemaining > 0{
+        //                self.timeRemaining -= 1
+        //            }
+        //        }
     }
+    
+    
 }
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
@@ -131,16 +133,21 @@ struct Menu : Identifiable {
 
 let MenuData = [
     Menu(name: "开发团队", icon: "person.2" , text:"作者：刘佳航，袁仲泽"),
-    Menu(name: "艺术指导", icon: "highlighter", text: "待定"),
-    Menu(name: "关于", icon: "exclamationmark.circle",text:"Power by Apple Inc."),
+    Menu(name: "艺术指导", icon: "highlighter", text: "谢佳露"),
+    //Menu(name: "关于", icon: "exclamationmark.circle",text:"点击这里以显示更多"),
     Menu(name: "帮助", icon: "lightbulb",text:"请参考使用说明"),
     Menu(name: "版本", icon: "hammer",text:"0.2.5.210204_alpha（内部版本）")
 ]
 
 //侧边栏视图设置
 struct MenuView: View {
+    @State private var isPresentedTwo = false
+    @State private var choose = "未登录"
+    var texts = Classes()
+    @State var a = false
+    @State var user = false
     @State private var isPresented = false
-    @Binding var AccounterName : String
+    @State var aAccounterName = "未登录"
     var menuItems = ["My Account","Team","About"]
     var menu = MenuData
     @Binding var show : Bool
@@ -158,7 +165,7 @@ struct MenuView: View {
                         .font(.title3)
                         .bold()
                     Section {
-                        Text(self.AccounterName)
+                        Text(texts.name)
                             .foregroundColor(.secondary)
                             .font(.headline)
                     }
@@ -170,15 +177,39 @@ struct MenuView: View {
                 MenuRow(image: item.icon, name: item.name, text: item.text)
                 
             }
+            
+            HStack{
+                Image(systemName: "exclamationmark.circle")
+                    .imageScale(.large)
+                    .foregroundColor(.secondary)
+                    .frame(width: 40, height: 40)
+                VStack(alignment: .leading) {
+                    Text("关于")
+                        .foregroundColor(.black)
+                        .font(.title3)
+                        .bold()
+                    Button("点击这里显示更多"){
+                        a.toggle()
+                        self.isPresented = true
+                    }
+                    .sheet(isPresented: $isPresented, content: {
+                        More()
+                    })
+                    .foregroundColor(.secondary)
+                }
+            }
             HStack {
                 Image(systemName: "arrowtriangle.right.circle")
                     .imageScale(.large)
                     .foregroundColor(.secondary)
                     .frame(width: 40, height: 40)
                 Button("登录") {
-                    self.isPresented = true
-                }.sheet(isPresented: $isPresented, content: {
+                    a.toggle()
+                    self.isPresentedTwo = true
+                }.sheet(isPresented: $isPresentedTwo, content: {
                     AccountIoginView()
+                    
+                    
                 })
                 .foregroundColor(.black)
                 .font(.title3)
@@ -204,7 +235,10 @@ struct MenuView: View {
         }
         .offset(x: show ? 0 : -UIScreen.main.bounds.width)
     }
+    
+    
 }
+
 
 //侧边栏呼出按钮组件
 struct MenuButton: View {
@@ -249,3 +283,4 @@ struct SigninButton: View {
         .padding(.trailing,10)
     }
 }
+

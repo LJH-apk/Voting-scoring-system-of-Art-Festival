@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E3F590BB-441F-4E28-B438-1D88E2B6B703"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "111D2C88-4B76-451E-A029-4BFD904277EE"
+            shouldBeEnabled = "No"
+            condition = "print(player_data)"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voting scoring system of Art Festival/SecondView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "getJoke(request:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28252178-73ED-4B90-8A23-E8216DB16D1D"
+            shouldBeEnabled = "No"
+            condition = "print(player_data)"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voting scoring system of Art Festival/SecondView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "getJoke(request:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "28252178-73ED-4B90-8A23-E8216DB16D1D - 8b3fb47ee6c0e9ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Voting_scoring_system_of_Art_Festival.SecondView.getJoke() -&gt; ()"
+                  moduleName = "Voting scoring system of Art Festival"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liujuncheng/Documents/Voting-scoring-system-of-Art-Festival/Voting%20scoring%20system%20of%20Art%20Festival/SecondView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "1260">
+               </Location>
+               <Location
+                  uuid = "28252178-73ED-4B90-8A23-E8216DB16D1D - ae713d1cf1818223"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Voting_scoring_system_of_Art_Festival.SecondView.getJoke() -&gt; ()"
+                  moduleName = "Voting scoring system of Art Festival"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liujuncheng/Documents/Voting-scoring-system-of-Art-Festival/Voting%20scoring%20system%20of%20Art%20Festival/SecondView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "400">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69083AF0-3A0C-4589-A061-E567882882A1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voting scoring system of Art Festival/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77E0A4FC-74AD-40FC-9CBC-FF6592FF43AE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voting scoring system of Art Festival/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "165"
+            endingLineNumber = "165"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "883835B8-B5EB-4C4A-AA2F-D3D4716673B6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voting scoring system of Art Festival/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "MenuView"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "883835B8-B5EB-4C4A-AA2F-D3D4716673B6 - f71c94d2806c5078"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of Voting_scoring_system_of_Art_Festival.MenuView.a : Swift.Bool"
+                  moduleName = "Voting scoring system of Art Festival"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liujuncheng/Documents/Voting-scoring-system-of-Art-Festival/Voting%20scoring%20system%20of%20Art%20Festival/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "883835B8-B5EB-4C4A-AA2F-D3D4716673B6 - 5eb7f579e1e5bbc6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Voting_scoring_system_of_Art_Festival.MenuView.a.getter : Swift.Bool"
+                  moduleName = "Voting scoring system of Art Festival"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liujuncheng/Documents/Voting-scoring-system-of-Art-Festival/Voting%20scoring%20system%20of%20Art%20Festival/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "883835B8-B5EB-4C4A-AA2F-D3D4716673B6 - 984f4f32a818128a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Voting_scoring_system_of_Art_Festival.MenuView.a.setter : Swift.Bool"
+                  moduleName = "Voting scoring system of Art Festival"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liujuncheng/Documents/Voting-scoring-system-of-Art-Festival/Voting%20scoring%20system%20of%20Art%20Festival/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "883835B8-B5EB-4C4A-AA2F-D3D4716673B6 - f79b6cb70784ccfa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Voting_scoring_system_of_Art_Festival.MenuView.a.modify : Swift.Bool"
+                  moduleName = "Voting scoring system of Art Festival"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liujuncheng/Documents/Voting-scoring-system-of-Art-Festival/Voting%20scoring%20system%20of%20Art%20Festival/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "883835B8-B5EB-4C4A-AA2F-D3D4716673B6 - 266d891ac4ce9860"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Voting_scoring_system_of_Art_Festival.MenuView.a.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Voting scoring system of Art Festival"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liujuncheng/Documents/Voting-scoring-system-of-Art-Festival/Voting%20scoring%20system%20of%20Art%20Festival/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "883835B8-B5EB-4C4A-AA2F-D3D4716673B6 - e900dba7d553e432"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Voting_scoring_system_of_Art_Festival.MenuView.$a.getter : SwiftUI.Binding&lt;Swift.Bool&gt;"
+                  moduleName = "Voting scoring system of Art Festival"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liujuncheng/Documents/Voting-scoring-system-of-Art-Festival/Voting%20scoring%20system%20of%20Art%20Festival/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8D37154B-ED77-4690-8061-681048FBCECC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voting scoring system of Art Festival/AccountIoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83BEA776-A4F8-45BB-A9BC-9EAD6F6314A3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voting scoring system of Art Festival/AccountIoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "accountState(OfUsername:OfPassword:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "851DDFDD-0744-4BE9-86FF-4BE72B4DDBFE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voting scoring system of Art Festival/AccountIoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "accountState(OfUsername:OfPassword:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91278F5D-2F61-474A-B5BD-E3432C26C5FC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voting scoring system of Art Festival/AccountIoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "accountState(OfUsername:OfPassword:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "91278F5D-2F61-474A-B5BD-E3432C26C5FC - 948fee6c655121c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Voting_scoring_system_of_Art_Festival.AccountIoginView.accountState() -&gt; ()"
+                  moduleName = "Voting scoring system of Art Festival"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liujuncheng/Documents/Voting-scoring-system-of-Art-Festival/Voting%20scoring%20system%20of%20Art%20Festival/AccountIoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "748">
+               </Location>
+               <Location
+                  uuid = "91278F5D-2F61-474A-B5BD-E3432C26C5FC - 948fee6c655121c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Voting_scoring_system_of_Art_Festival.AccountIoginView.accountState() -&gt; ()"
+                  moduleName = "Voting scoring system of Art Festival"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liujuncheng/Documents/Voting-scoring-system-of-Art-Festival/Voting%20scoring%20system%20of%20Art%20Festival/AccountIoginView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "134"
+                  endingLineNumber = "134"
+                  offsetFromSymbolStart = "1032">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7BF7C50-0323-4008-A23D-A833E31B36CE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Voting scoring system of Art Festival/AccountIoginView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "accountState(OfUsername:OfPassword:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

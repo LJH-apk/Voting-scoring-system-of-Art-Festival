@@ -7,67 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8009441B25D41673001C207F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8009441A25D41673001C207F /* Assets.xcassets */; };
+		8017128125CED551008E7DE5 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8017128025CED551008E7DE5 /* Classes.swift */; };
+		80507A4725D3D35100C400EA /* GetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80507A4625D3D35100C400EA /* GetView.swift */; };
 		808DDA6225C9407200F09196 /* AccountIoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808DDA6125C9407200F09196 /* AccountIoginView.swift */; };
-		80B5952825CADA6800A5554F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B5951925CAD9F100A5554F /* Alamofire.framework */; };
-		80B5952925CADA6800A5554F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80B5951925CAD9F100A5554F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		80D6451E25C7EF93002E9FAF /* Voting_scoring_system_of_Art_FestivalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6451D25C7EF93002E9FAF /* Voting_scoring_system_of_Art_FestivalApp.swift */; };
 		80D6452025C7EF93002E9FAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6451F25C7EF93002E9FAF /* ContentView.swift */; };
-		80D6452225C7EF94002E9FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D6452125C7EF94002E9FAF /* Assets.xcassets */; };
 		80D6452525C7EF94002E9FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80D6452425C7EF94002E9FAF /* Preview Assets.xcassets */; };
-		80D6452F25C7F14A002E9FAF /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6452E25C7F14A002E9FAF /* SecondView.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		80B5951825CAD9F100A5554F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80B5950E25CAD9F100A5554F /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS";
-		};
-		80B5951A25CAD9F100A5554F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80B5950E25CAD9F100A5554F /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS Tests";
-		};
-		80B5951C25CAD9F100A5554F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80B5950E25CAD9F100A5554F /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
-			remoteInfo = "Alamofire macOS";
-		};
-		80B5951E25CAD9F100A5554F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80B5950E25CAD9F100A5554F /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
-			remoteInfo = "Alamofire macOS Tests";
-		};
-		80B5952025CAD9F100A5554F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80B5950E25CAD9F100A5554F /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS";
-		};
-		80B5952225CAD9F100A5554F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80B5950E25CAD9F100A5554F /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS Tests";
-		};
-		80B5952425CAD9F100A5554F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80B5950E25CAD9F100A5554F /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E4202FE01B667AA100C997FB;
-			remoteInfo = "Alamofire watchOS";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		80B5952A25CADA6800A5554F /* Embed Frameworks */ = {
@@ -76,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				80B5952925CADA6800A5554F /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,15 +30,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8009441A25D41673001C207F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../var/folders/5f/9pddsdsn1ps6v65hdm1k06200000gn/T/MicrosoftEdgeDownloads/6fe269ef-49d1-402e-a387-c3aa8bdd23e4/AppIcons/Assets.xcassets"; sourceTree = "<group>"; };
+		8017128025CED551008E7DE5 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		80507A4625D3D35100C400EA /* GetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetView.swift; sourceTree = "<group>"; };
 		808DDA6125C9407200F09196 /* AccountIoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountIoginView.swift; sourceTree = "<group>"; };
-		80B5950E25CAD9F100A5554F /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
-		80D6451A25C7EF93002E9FAF /* Voting scoring system of Art Festival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voting scoring system of Art Festival.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D6451A25C7EF93002E9FAF /* Art.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Art.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80D6451D25C7EF93002E9FAF /* Voting_scoring_system_of_Art_FestivalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voting_scoring_system_of_Art_FestivalApp.swift; sourceTree = "<group>"; };
 		80D6451F25C7EF93002E9FAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		80D6452125C7EF94002E9FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80D6452425C7EF94002E9FAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		80D6452625C7EF94002E9FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		80D6452E25C7F14A002E9FAF /* SecondView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,27 +46,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80B5952825CADA6800A5554F /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		80B5950F25CAD9F100A5554F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				80B5951925CAD9F100A5554F /* Alamofire.framework */,
-				80B5951B25CAD9F100A5554F /* Alamofire iOS Tests.xctest */,
-				80B5951D25CAD9F100A5554F /* Alamofire.framework */,
-				80B5951F25CAD9F100A5554F /* Alamofire macOS Tests.xctest */,
-				80B5952125CAD9F100A5554F /* Alamofire.framework */,
-				80B5952325CAD9F100A5554F /* Alamofire tvOS Tests.xctest */,
-				80B5952525CAD9F100A5554F /* Alamofire.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		80B5952725CADA6800A5554F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,8 +62,7 @@
 		80D6451125C7EF93002E9FAF = {
 			isa = PBXGroup;
 			children = (
-				80B5950E25CAD9F100A5554F /* Alamofire.xcodeproj */,
-				80D6451C25C7EF93002E9FAF /* Voting scoring system of Art Festival */,
+				80D6451C25C7EF93002E9FAF /* Art */,
 				80D6451B25C7EF93002E9FAF /* Products */,
 				80B5952725CADA6800A5554F /* Frameworks */,
 			);
@@ -141,23 +71,24 @@
 		80D6451B25C7EF93002E9FAF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				80D6451A25C7EF93002E9FAF /* Voting scoring system of Art Festival.app */,
+				80D6451A25C7EF93002E9FAF /* Art.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		80D6451C25C7EF93002E9FAF /* Voting scoring system of Art Festival */ = {
+		80D6451C25C7EF93002E9FAF /* Art */ = {
 			isa = PBXGroup;
 			children = (
+				80507A4625D3D35100C400EA /* GetView.swift */,
+				8017128025CED551008E7DE5 /* Classes.swift */,
 				80D6451D25C7EF93002E9FAF /* Voting_scoring_system_of_Art_FestivalApp.swift */,
-				80D6452E25C7F14A002E9FAF /* SecondView.swift */,
 				80D6451F25C7EF93002E9FAF /* ContentView.swift */,
 				808DDA6125C9407200F09196 /* AccountIoginView.swift */,
-				80D6452125C7EF94002E9FAF /* Assets.xcassets */,
+				8009441A25D41673001C207F /* Assets.xcassets */,
 				80D6452625C7EF94002E9FAF /* Info.plist */,
 				80D6452325C7EF94002E9FAF /* Preview Content */,
 			);
-			path = "Voting scoring system of Art Festival";
+			path = Art;
 			sourceTree = "<group>";
 		};
 		80D6452325C7EF94002E9FAF /* Preview Content */ = {
@@ -171,9 +102,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		80D6451925C7EF93002E9FAF /* Voting scoring system of Art Festival */ = {
+		80D6451925C7EF93002E9FAF /* Art */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80D6452925C7EF94002E9FAF /* Build configuration list for PBXNativeTarget "Voting scoring system of Art Festival" */;
+			buildConfigurationList = 80D6452925C7EF94002E9FAF /* Build configuration list for PBXNativeTarget "Art" */;
 			buildPhases = (
 				80D6451625C7EF93002E9FAF /* Sources */,
 				80D6451725C7EF93002E9FAF /* Frameworks */,
@@ -184,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = "Voting scoring system of Art Festival";
+			name = Art;
 			productName = "Voting scoring system of Art Festival";
-			productReference = 80D6451A25C7EF93002E9FAF /* Voting scoring system of Art Festival.app */;
+			productReference = 80D6451A25C7EF93002E9FAF /* Art.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 80D6451525C7EF93002E9FAF /* Build configuration list for PBXProject "Voting scoring system of Art Festival" */;
+			buildConfigurationList = 80D6451525C7EF93002E9FAF /* Build configuration list for PBXProject "Art" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -214,78 +145,20 @@
 			mainGroup = 80D6451125C7EF93002E9FAF;
 			productRefGroup = 80D6451B25C7EF93002E9FAF /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 80B5950F25CAD9F100A5554F /* Products */;
-					ProjectRef = 80B5950E25CAD9F100A5554F /* Alamofire.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				80D6451925C7EF93002E9FAF /* Voting scoring system of Art Festival */,
+				80D6451925C7EF93002E9FAF /* Art */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		80B5951925CAD9F100A5554F /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 80B5951825CAD9F100A5554F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80B5951B25CAD9F100A5554F /* Alamofire iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire iOS Tests.xctest";
-			remoteRef = 80B5951A25CAD9F100A5554F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80B5951D25CAD9F100A5554F /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 80B5951C25CAD9F100A5554F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80B5951F25CAD9F100A5554F /* Alamofire macOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire macOS Tests.xctest";
-			remoteRef = 80B5951E25CAD9F100A5554F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80B5952125CAD9F100A5554F /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 80B5952025CAD9F100A5554F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80B5952325CAD9F100A5554F /* Alamofire tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire tvOS Tests.xctest";
-			remoteRef = 80B5952225CAD9F100A5554F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80B5952525CAD9F100A5554F /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = 80B5952425CAD9F100A5554F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		80D6451825C7EF93002E9FAF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8009441B25D41673001C207F /* Assets.xcassets in Resources */,
 				80D6452525C7EF94002E9FAF /* Preview Assets.xcassets in Resources */,
-				80D6452225C7EF94002E9FAF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,7 +172,8 @@
 				80D6452025C7EF93002E9FAF /* ContentView.swift in Sources */,
 				808DDA6225C9407200F09196 /* AccountIoginView.swift in Sources */,
 				80D6451E25C7EF93002E9FAF /* Voting_scoring_system_of_Art_FestivalApp.swift in Sources */,
-				80D6452F25C7F14A002E9FAF /* SecondView.swift in Sources */,
+				8017128125CED551008E7DE5 /* Classes.swift in Sources */,
+				80507A4725D3D35100C400EA /* GetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Voting scoring system of Art Festival/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Art\"";
 				DEVELOPMENT_TEAM = 4FJLB4CZBG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Voting scoring system of Art Festival/Info.plist";
@@ -451,7 +325,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Voting scoring system of Art Festival/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Art\"";
 				DEVELOPMENT_TEAM = 4FJLB4CZBG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Voting scoring system of Art Festival/Info.plist";
@@ -471,7 +345,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		80D6451525C7EF93002E9FAF /* Build configuration list for PBXProject "Voting scoring system of Art Festival" */ = {
+		80D6451525C7EF93002E9FAF /* Build configuration list for PBXProject "Art" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				80D6452725C7EF94002E9FAF /* Debug */,
@@ -480,7 +354,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80D6452925C7EF94002E9FAF /* Build configuration list for PBXNativeTarget "Voting scoring system of Art Festival" */ = {
+		80D6452925C7EF94002E9FAF /* Build configuration list for PBXNativeTarget "Art" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				80D6452A25C7EF94002E9FAF /* Debug */,
